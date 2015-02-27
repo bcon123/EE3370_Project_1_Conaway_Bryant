@@ -9,7 +9,7 @@ A = 3; f= 1000; omega = 2*pi*f;
 angle = degtorad(33); T=1/f;
 t=linspace(-3*T,3*T,1000);
 x_t=3*cos(omega*t+angle);
-f_t=cos(omega*t)*sin(omega*t);
+f_t=cos(omega*t).*sin(omega*t);
 subplot(4,1,1)
 plot(t,x_t, 'linewidth',2);grid on
 subplot(4,1,2)
